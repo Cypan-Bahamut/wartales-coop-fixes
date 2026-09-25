@@ -1,0 +1,15 @@
+[package]
+name = "patchtool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Byte-identical-roundtrip hlbc: clone wartales-mp next to this repo
+# (https://github.com/UberMorgott/Wartales-Mod-wartales-mp) so this path
+# resolves. It is upstream hlbc 0.7.0 (MIT) plus two serializer fixes
+# (see its vendor/NOTICE.md).
+hlbc = { path = "../Wartales-Mod-wartales-mp/patcher/vendor/hlbc", default-features = false }
+anyhow = "1"
+
+[profile.release]
+opt-level = 1
