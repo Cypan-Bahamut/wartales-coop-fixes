@@ -38,7 +38,12 @@ per-frame check as singleplayer. Known cosmetic trade-off: the Repair/Cure
 buttons no longer live-update their enabled look while the screen is open;
 worst case a button looks clickable and does nothing.
 
-### 2. Untargetable "Nightmare" reinforcements in ghost-pack fights (`nightmarefix`) — **beta, in field testing**
+### 2. Untargetable "Nightmare" reinforcements in ghost-pack fights (`nightmarefix`) — **UNTESTED**
+
+> ⚠️ **This patch has not yet been tested in a live co-op ghost-pack fight.**
+> The diagnosis and the patch are verified at the bytecode level only. If you
+> want only the proven fix, apply `lootfix2` alone and skip this one. Field
+> test results will be reported here when available.
 
 The bug: in the fog battles against ghost animals, the Nightmare that arrives
 as reinforcements can be attacked by the host but **not by the co-op guest** —
